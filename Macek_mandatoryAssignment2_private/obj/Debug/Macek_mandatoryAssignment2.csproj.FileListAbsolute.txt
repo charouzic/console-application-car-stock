@@ -1,0 +1,12 @@
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2/bin/Debug/Macek_mandatoryAssignment2.exe
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2/bin/Debug/Macek_mandatoryAssignment2.pdb
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2/obj/Debug/Macek_mandatoryAssignment2.csprojAssemblyReference.cache
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2/obj/Debug/Macek_mandatoryAssignment2.csproj.CoreCompileInputs.cache
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2/obj/Debug/Macek_mandatoryAssignment2.exe
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2/obj/Debug/Macek_mandatoryAssignment2.pdb
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2_private/obj/Debug/Macek_mandatoryAssignment2.csprojAssemblyReference.cache
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2_private/obj/Debug/Macek_mandatoryAssignment2.csproj.CoreCompileInputs.cache
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2_private/obj/Debug/Macek_mandatoryAssignment2.exe
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2_private/obj/Debug/Macek_mandatoryAssignment2.pdb
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2_private/bin/Debug/Macek_mandatoryAssignment2.exe
+/Users/viki/Desktop/UNI/MASTER (cbs)/1st Semester/Introduction to Programming and Application Design (T)/mandatory assignments/Macek_mandatoryAssignment2_private/bin/Debug/Macek_mandatoryAssignment2.pdb

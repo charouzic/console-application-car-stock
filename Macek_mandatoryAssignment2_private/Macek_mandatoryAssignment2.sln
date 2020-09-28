@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Macek_mandatoryAssignment2", "Macek_mandatoryAssignment2.csproj", "{C2BAA43F-F405-4523-8E5D-CAD84DB8972C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2BAA43F-F405-4523-8E5D-CAD84DB8972C}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{C2BAA43F-F405-4523-8E5D-CAD84DB8972C}.Debug|anycpu.Build.0 = Debug|anycpu
+		{C2BAA43F-F405-4523-8E5D-CAD84DB8972C}.Release|anycpu.ActiveCfg = Release|anycpu
+		{C2BAA43F-F405-4523-8E5D-CAD84DB8972C}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+EndGlobal
