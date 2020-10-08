@@ -11,34 +11,33 @@ namespace Macek_mandatoryAssignment2
         private string adminName = "admin";
         private string adminPwd = "Listen20";
         
-
+        // method checking correct login details - if wrong no access
         public void Login()
         {
-            Console.Write("Please provide username to access the BrandX system: ");
-            string userName = Console.ReadLine();
-            Console.Write("Please provide password: ");
-            string pwd = Console.ReadLine();
-
-            if ((userName == adminName) & (pwd == adminPwd))
+            while(true)
             {
-                callMenu();
-            }
+                Console.Write("Please provide username to access the BrandX system: ");
+                string userName = Console.ReadLine();
+                Console.Write("Please provide password: ");
+                string pwd = Console.ReadLine();
 
-            else
-            {
-                Console.WriteLine("Incorrect login name and/or password");
-                Console.WriteLine("Try again? Press 1, for exit press any other number");
-                int logAgain = int.Parse(Console.ReadLine());
-
-                if (logAgain == 1)
+                if ((userName == adminName) & (pwd == adminPwd))
                 {
-                    Login();
+                    callMenu();
+                }
+
+                else
+                {
+                    Console.WriteLine("Incorrect login name and/or password");
                 }
             }
+            
         }
 
         public void callMenu()
         {
+            while (true)
+            {
             Console.WriteLine("************ Here are your options ************");
             Console.WriteLine("Please select the action:");
             Console.WriteLine("1. Show stock account");
@@ -47,53 +46,43 @@ namespace Macek_mandatoryAssignment2
             Console.WriteLine("4. Get stock status");
 
             int menuAction = int.Parse(Console.ReadLine());
+            switch (menuAction)
+                {
+                    case 1:
+                        StockAccount();
+                        break;
 
-            if (menuAction == 1)
-            {
-                StockAccount();
-            }
+                    case 2:
+                        Console.WriteLine($"Total value of Stock: {TotalValue()}");
+                        break;
 
-            if (menuAction == 2)
-            {
-                Console.WriteLine($"Total value of Stock: {TotalValue()}");
-            }
+                    case 3:
+                        Console.Write("Please provide the type of car sold (CarX or  CarY): ");
+                        string carType = Console.ReadLine();
+                        CarSold(carType);
+                        break;
 
-            if (menuAction == 3)
-            {
-                Console.Write("Please provide the type of car sold (CarX or  CarY): ");
-                string carType = Console.ReadLine();
-                CarSold(carType);
-            }
+                    case 4:
+                        Console.WriteLine($"Stock status: {StockStatus()}");
+                        break;
 
-            if (menuAction == 4)
-            {
-                Console.WriteLine($"Stock status: {StockStatus()}");
-            }
-
-            if (menuAction > 4 || menuAction < 1)
-            {
-                Console.WriteLine("That is not an option");
-            }
-
-            Console.WriteLine("For returning to the menu press 1, otherwise press any other number");
-            int again = int.Parse(Console.ReadLine());
-
-            if (again == 1)
-            {
-                callMenu();
-            }
-            else
-            {
-                Console.WriteLine("Thank you for using the software, hope to see you soon");
+                    default:
+                        Console.WriteLine("Incorect option choice");
+                        callMenu();
+                        break;
+                }
             }
         }
-
+            
+        
+        // method returning number of cars in each stock
         private void StockAccount()
         {
             Console.WriteLine($"Number of Cars X in stock: {TotalInStockX}");
             Console.WriteLine($"Number of Cars Y in stock: {TotalInStockY}");
         }
 
+        // method calculating total value of stock in USD based on number of cars and prices
         private int TotalValue()
         {
             int xStock = XPrice * TotalInStockX;
@@ -102,6 +91,7 @@ namespace Macek_mandatoryAssignment2
             return result;
         }
 
+        // method returning stock status based on number of cars in stock
         private string StockStatus()
         {
             int stockNumber = TotalInStockX + TotalInStockY;
@@ -127,22 +117,24 @@ namespace Macek_mandatoryAssignment2
             }
         }
 
+        // mehtod allowing user to change number of cars in stock caused by selling
         private void CarSold(string carType)
         {
-            if (carType == "CarX")
+            switch (carType)
             {
-                TotalInStockX = TotalInStockX - 1;
-                Console.WriteLine($"Number of Car X left: {TotalInStockX}");
-            }
+                case "CarX":
+                    TotalInStockX = TotalInStockX - 1;
+                    Console.WriteLine($"Number of Car X left: {TotalInStockX}");
+                    break;
 
-            else if (carType == "CarY")
-            {
-                TotalInStockY = TotalInStockY - 1;
-                Console.WriteLine($"Number of Car Y left: {TotalInStockY}");
-            }
-            else
-            {
-                Console.WriteLine("Unknown car type");
+                case "CarY":
+                    TotalInStockY = TotalInStockY - 1;
+                    Console.WriteLine($"Number of Car Y left: {TotalInStockY}");
+                    break;
+
+                default:
+                    Console.WriteLine("Unknown car type");
+                    break;
             }
         }
     }
